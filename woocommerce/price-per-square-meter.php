@@ -20,7 +20,7 @@ function add_price_per_square_meter_as_suffix($price){
 	$price_per_square_meter = round( ( ($product_price*1.19) / $product_width), 2);
 	
 	//	Format number with comma separator as per woocommerce default
-	$suffix = "($price_per_square_meter € je m2)";
+	$suffix = "($price_per_square_meter €/m2)";
     $suffix = str_replace(".", ",", $suffix);
 	
 	//	Add text after product price
